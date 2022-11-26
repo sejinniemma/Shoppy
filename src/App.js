@@ -1,7 +1,14 @@
 import './App.css';
+import Navbar from './components/navbar';
+import { Outlet } from 'react-router-dom';
 
 function App() {
-  return <h1 className='App'>Shoppy</h1>;
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+    </>
+  );
 }
 
 export default App;
