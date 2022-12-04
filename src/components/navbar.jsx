@@ -7,10 +7,13 @@ import User from './User';
 
 export default function Navbar() {
   const [user, setUser] = useState();
+  const [admin, setAdmin] = useState();
 
-  // 로그인이 되면서 리프레쉬 되 useEffect가 다시 실행되면서 user정보가 저장되는 형태
   useEffect(() => {
-    onUserStateChange((user) => setUser(user));
+    onUserStateChange((user) => {
+      user.isAdmin && setAdmin(user);
+      setUser(user);
+    });
   }, []);
 
   return (
@@ -21,13 +24,22 @@ export default function Navbar() {
       </Link>
       <nav className='flex items-center gap-4 font-semibold'>
         <Link to='/products'>Products</Link>
-        <Link to='/carts'>Carts</Link>
-        <Link to='/products/new' className='text-2xl'>
-          <BsFillPencilFill />
-        </Link>
+        {user && <Link to='/carts'>Carts</Link>}
+        {user && (
+          <Link to='/products/new' className='text-2xl'>
+            <BsFillPencilFill />
+          </Link>
+        )}
         {user && <User user={user} />}
         {!user && <button onClick={login}>Login</button>}
         {user && <button onClick={logout}>Logout</button>}
+
+        {/* what is the difference?? */}
+        {/* {user ? (
+          <button onClick={login}>Login</button>
+        ) : (
+          <button onClick={login}>Login</button>
+        )} */}
       </nav>
     </header>
   );
