@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+import { addNewProduct, writeUserData } from '../api/firebase';
+import { uploadImage } from '../api/uploader';
 import Button from '../components/ui/Button';
+import { useAuthContext } from '../context/AuthContext';
 // import Upload from '../api/upload';
 
 export default function NewProduct() {
+  const { user } = useAuthContext();
   const [product, setProduct] = useState({});
   const [file, setFile] = useState();
+  const [url, setURL] = useState();
 
   // 제품,file 저장
   const handleChange = async (e) => {
@@ -16,10 +21,11 @@ export default function NewProduct() {
     setProduct((product) => ({ ...product, [name]: value }));
   };
 
-  // 제품 정보들 업로드
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // const upload = await new Upload(file);
+    uploadImage(file).then((url) => setURL(url));
+    addNewProduct(product, url);
+    //Firebase에 제품과, url정보 업로드 해주기
   };
 
   return (
@@ -50,6 +56,7 @@ export default function NewProduct() {
           className='p-5'
           type='number'
           name='price'
+          value={product.price ?? ''}
           placeholder='가격'
           required
           onChange={handleChange}
@@ -58,7 +65,7 @@ export default function NewProduct() {
           className='p-5'
           type='text'
           name='category'
-          value={product.category ?? ''}
+          value={product.category} // 왜 안되는지 알기.
           required
           placeholder='카테고리'
         />
@@ -66,7 +73,7 @@ export default function NewProduct() {
           className='p-5'
           type='text'
           name='description'
-          value={product.description}
+          value={product.description ?? ''}
           required
           placeholder='제품 설명'
           onChange={handleChange}

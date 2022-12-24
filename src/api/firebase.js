@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
-import { getDatabase, ref, get } from 'firebase/database';
+import { getDatabase, ref, get, set } from 'firebase/database';
+import { v4 as uuid } from 'uuid';
 import {
   getAuth,
   signInWithPopup,
@@ -43,5 +44,19 @@ async function adminUser(user) {
       const isAdmin = admins.includes(user.uid) ? true : false;
       return { ...user, isAdmin };
     }
+  });
+}
+// 데이터 쓰기
+export async function addNewProduct(product, image) {
+  const id = uuid();
+  // 에러가 났던 이유 스프레드연산자
+  console.log({ product });
+  // console.log({ ...product, id });
+  await set(ref(database, `products/${id}`), {
+    ...product,
+    id,
+    price: parseInt(product.price),
+    image,
+    options: product.options.split(','),
   });
 }
