@@ -37,6 +37,7 @@ export function onUserStateChange(callback) {
   });
 }
 
+// 어드민 정보 읽어오기
 async function adminUser(user) {
   return get(ref(database, 'admins')).then((snapshot) => {
     if (snapshot.exists()) {
@@ -58,5 +59,15 @@ export async function addNewProduct(product, image) {
     price: parseInt(product.price), // 덮혀씌워지것
     image, // 새로추가할것
     options: product.options.split(','),
+  });
+}
+
+// 제품정보 읽어오기
+export async function getProducts() {
+  return get(ref(database, 'products')).then((snapshot) => {
+    if (snapshot.exists()) {
+      return Object.values(snapshot.val());
+    }
+    return [];
   });
 }

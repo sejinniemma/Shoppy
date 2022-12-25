@@ -1,5 +1,12 @@
 import React from 'react';
+import Banner from '../components/Banner';
+import Products from '../components/Products';
 
 export default function Home() {
-  return <h2>Home</h2>;
+  return (
+    <>
+      <Banner />
+      <Products />
+    </>
+  );
 }

@@ -1,0 +1,86 @@
+{
+  "admins": ["NZHiB6aCDGSGTpi3nSJ2u7gVx6z2"],
+  "products": {
+    "07d90d98-42df-48be-926e-3010108fcc91": {
+      "category": "ì—¬ì„±",
+      "description": "Gold Cotton Tweed ë“œë ˆìŠ¤ - ë¡œë§Œ ìŠ¤í„°ë“œ ë‹¨ì¶” ë””í…Œì¼ê³¼ ë¸Œë ˆì´ë“œ",
+      "id": "07d90d98-42df-48be-926e-3010108fcc91",
+      "image": "http://res.cloudinary.com/drqni4rhj/image/upload/v1665547422/oqrzmizpfa6nb1cgvey8.webp",
+      "options": ["36", "38", "40", "42"],
+      "price": 120000,
+      "title": "GOLD COTTON TWEED ë“œë ˆìŠ¤"
+    },
+    "2b46da53-6eab-4f69-8c67-58abdf82e539": {
+      "category": "ì—¬ì„±",
+      "description": "ìŠ¤íŠ¸ë ˆì¹˜ ë¹„ìŠ¤ì½”ìŠ¤ ë“œë ˆìŠ¤ - í„°í‹€ë„¥ - ìžì¹´ë“œ ìŠ¤íŠ¸ë¼ì´í”„ ë””í…Œì¼",
+      "id": "2b46da53-6eab-4f69-8c67-58abdf82e539",
+      "image": "http://res.cloudinary.com/drqni4rhj/image/upload/v1665547556/xb9uqu0cyslopyam5bcw.webp",
+      "options": ["XS", "S", "M", "L", "XL"],
+      "price": 150000,
+      "title": "ìŠ¤íŠ¸ë ˆì¹˜ ë¹„ìŠ¤ì½”ìŠ¤ ë“œë ˆìŠ¤"
+    },
+    "313a0f7d-ec20-4b09-a5a1-d70b50a804c5": {
+      "category": "ë‚¨ì„±",
+      "description": "ë”ê¸€ëŸ¬ìŠ¤ ì½”í”Œëžœë“œì˜ 'WE ALL HAVE SECRET MESSAGES HIDDEN WITHIN US' í”„ë¦°íŠ¸ë¥¼ ë”í•œ í›„ë“œ ì½”íŠ¼ ìŠ¤ì›»ì…”ì¸ ",
+      "id": "313a0f7d-ec20-4b09-a5a1-d70b50a804c5",
+      "image": "http://res.cloudinary.com/drqni4rhj/image/upload/v1665547136/uzvsw7thbvzfv6boxxdm.webp",
+      "options": ["XXS", "XS", "S", "M", "L", "XL", "3XL"],
+      "price": 50000,
+      "title": "í”„ë¦°íŠ¸ ì½”íŠ¼ ìŠ¤ì›»ì…”ì¸ "
+    },
+    "340d8c7e-4b8f-404c-8e84-9736b3a9f9f8": {
+      "category": "ì—¬ì„±",
+      "description": "ìˆ¨ê²¨ì§„ ì˜†ë©´ ì§€í¼ ë° í›„í¬ ì—¬ë°ˆ",
+      "id": "340d8c7e-4b8f-404c-8e84-9736b3a9f9f8",
+      "image": "http://res.cloudinary.com/drqni4rhj/image/upload/v1665547470/v32qzjgkjnysg1pl0nxc.webp",
+      "options": ["36", "38", "40", "42"],
+      "price": 50000,
+      "title": "GOLD COTTON TWEED ì‡¼ì¸ "
+    },
+    "709f23cf-d132-4454-81e6-33e92a1ff7e4": {
+      "category": "ë‚¨ì„±",
+      "description": "ê°€ìŠ´ ë¶€ë¶„ì— ë‚˜ì¼ë¡  íŒ¨ë„ ë° ìŠ¤í„°ë“œ ë””í…Œì¼ì„ êµ¬ì„±í•œ í›„ë“œ ì½”íŠ¼ ìŠ¤ì›»ì…”ì¸ ",
+      "id": "709f23cf-d132-4454-81e6-33e92a1ff7e4",
+      "image": "http://res.cloudinary.com/drqni4rhj/image/upload/v1665547296/c1jqykwd4xphlacs44ds.webp",
+      "options": ["XS", "S", "M", "L", "XL"],
+      "price": 80000,
+      "title": "ë‚˜ì¼ë¡  íŒ¨ë„ & ìŠ¤í„°ë“œ ë””í…Œì¼ ì½”íŠ¼ ìŠ¤ì›»ì…”ì¸ "
+    },
+    "72944e5a-fbea-487b-9c71-d883a67ed907": {
+      "category": "ì—¬ì„±",
+      "description": "ìºì‹œë¯¸ì–´ ìŠ¤ì›¨í„° - í¬ë¡­ í• - ë£¨ë ‰ìŠ¤ë¥¼ ë”í•œ ìžì¹´ë“œ ìŠ¤íŠ¸ë¼ì´í”„ ë””í…Œì¼",
+      "id": "72944e5a-fbea-487b-9c71-d883a67ed907",
+      "image": "http://res.cloudinary.com/drqni4rhj/image/upload/v1665547509/xyxwggoohgirse8oxbbc.webp",
+      "options": ["XS", "S", "M"],
+      "price": 50000,
+      "title": "ìºì‹œë¯¸ì–´ ìŠ¤ì›¨í„°"
+    },
+    "99cce48a-5650-4c69-99dd-ac7a21988a6e": {
+      "category": "ì—¬ì„±",
+      "description": "ëŒ€ì¡°ì ì¸ ê°€ì£½ íŠ¸ë¦¬ë° ë””í…Œì¼",
+      "id": "99cce48a-5650-4c69-99dd-ac7a21988a6e",
+      "image": "http://res.cloudinary.com/drqni4rhj/image/upload/v1667437805/crvkcxi4jbmyi1s0beox.webp",
+      "options": ["XXS", "XS", "S", "M", "L", "XL", "3XL"],
+      "price": 80000,
+      "title": " TOILE ICONOGRAPHE LIGHT ìž¬í‚·"
+    },
+    "d436bbd1-2bc2-4d06-aaaf-a56fec00f3cc": {
+      "category": "ë‚¨ì„±",
+      "description": "ê°€ìŠ´ ë¶€ë¶„ì— ë‚˜ì¼ë¡  íŒ¨ë„ ë° ìŠ¤í„°ë“œ ë””í…Œì¼ì„ êµ¬ì„±í•œ í¬ë£¨ë„¥ ì½”íŠ¼ í‹°ì…”ì¸ ",
+      "id": "d436bbd1-2bc2-4d06-aaaf-a56fec00f3cc",
+      "image": "http://res.cloudinary.com/drqni4rhj/image/upload/v1665547333/o3yksrtoazibzdespkfh.webp",
+      "options": ["XS", "S", "M", "L", "XL"],
+      "price": 80000,
+      "title": "ë‚˜ì¼ë¡  íŒ¨ë„ & ìŠ¤í„°ë“œ ë””í…Œì¼ í¬ë£¨ë„¥ ì½”íŠ¼ í‹°ì…”ì¸ "
+    },
+    "f359eedd-4c0c-400f-97e2-7f4ca584607a": {
+      "category": "ì—¬ì„±",
+      "description": "ë”ê¸€ëŸ¬ìŠ¤ ì½”í”Œëžœë“œì˜ 'BEAUTY HAS KIND OF BECOME AN ACT OF REBELLION' í”„ë¦°íŠ¸ë¥¼ ë”í•œ í›„ë“œ ì½”íŠ¼ ìŠ¤ì›»ì…”ì¸ ",
+      "id": "f359eedd-4c0c-400f-97e2-7f4ca584607a",
+      "image": "http://res.cloudinary.com/drqni4rhj/image/upload/v1665547237/wm8oawvktvkzwc6bvcqi.webp",
+      "options": ["XXS", "XS", "S", "M", "L", "XL", "3XL"],
+      "price": 90000,
+      "title": "í”„ë¦°íŠ¸ ì½”íŠ¼ ìŠ¤ì›»ì…”ì¸  (ì—¬ì„±)"
+    }
+  }
+}
