@@ -35,15 +35,18 @@ export default function NewProduct() {
   };
 
   return (
-    <section className='flex items-center flex-col'>
-      {success && <p>✅ {success}</p>}
-      {file && <img src={URL.createObjectURL(file)} alt='local file' />}
-      <form
-        onSubmit={handleSubmit}
-        className='flex flex-col space-y-4 border-black w-full'
-      >
+    <section className='w-full text-center'>
+      <h2 className='text-2xl font-bold my-4'>새로운 제품등록</h2>
+      {success && <p className='my-2'>✅ {success}</p>}
+      {file && (
+        <img
+          className='w-96 mx-auto mb-2'
+          src={URL.createObjectURL(file)}
+          alt='local file'
+        />
+      )}
+      <form onSubmit={handleSubmit} className='flex flex-col px-12'>
         <input
-          className='p-5'
           type='file'
           name='file'
           accept='image/*'
@@ -51,7 +54,6 @@ export default function NewProduct() {
           onChange={handleChange}
         />
         <input
-          className='p-5'
           type='text'
           name='title'
           value={product.title ?? ''}
@@ -60,7 +62,6 @@ export default function NewProduct() {
           onChange={handleChange}
         />
         <input
-          className='p-5'
           type='number'
           name='price'
           value={product.price ?? ''}
@@ -69,7 +70,6 @@ export default function NewProduct() {
           onChange={handleChange}
         />
         <input
-          className='p-5'
           type='text'
           name='category'
           value={product.category} // 왜 안되는지 알기.
@@ -77,7 +77,6 @@ export default function NewProduct() {
           placeholder='카테고리'
         />
         <input
-          className='p-5'
           type='text'
           name='description'
           value={product.description ?? ''}
@@ -86,7 +85,6 @@ export default function NewProduct() {
           onChange={handleChange}
         />
         <input
-          className='p-5'
           type='text'
           name='options'
           value={product.options ?? ''}
