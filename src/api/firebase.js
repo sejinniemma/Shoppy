@@ -50,13 +50,13 @@ async function adminUser(user) {
 export async function addNewProduct(product, image) {
   const id = uuid();
   // 에러가 났던 이유 스프레드연산자
-  console.log({ product });
+  // console.log({ product }); 오브젝트안에 또 오브젝트가 있음.
   // console.log({ ...product, id });
-  await set(ref(database, `products/${id}`), {
+  return await set(ref(database, `products/${id}`), {
     ...product,
     id,
-    price: parseInt(product.price),
-    image,
+    price: parseInt(product.price), // 덮혀씌워지것
+    image, // 새로추가할것
     options: product.options.split(','),
   });
 }

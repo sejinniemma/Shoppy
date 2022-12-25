@@ -4,6 +4,7 @@ export async function uploadImage(file) {
 
   data.append('file', file);
   data.append('upload_preset', 'scucq57o');
+  
   return fetch(url, {
     method: 'POST',
     body: data,
