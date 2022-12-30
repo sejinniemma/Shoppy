@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { addAndUpdateCart } from '../api/firebase';
 import Button from '../components/ui/Button';
+import { useAuthContext } from '../context/AuthContext';
 
 export default function ProductDetail() {
+  const { uid } = useAuthContext();
   const {
     state: {
       product: { category, description, id, image, options, price, title },
     },
   } = useLocation();
+
   const [selected, setSelected] = useState(options && options[0]);
   const handleSelect = (e) => setSelected(e.target.value);
-  const handleClick = () => {};
+  const handleClick = () => {
+    // 저장할때 state와 DB둘다 할필요 없음, 가져올때 하는게 맞음
+    const product = { id, image, title, price, optioin: selected, quantity: 1 };
+    addAndUpdateCart(uid, product);
+  };
+
   return (
     <>
       <p className='mx-12 mt-4 text-gray-700'>{category}</p>
