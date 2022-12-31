@@ -72,17 +72,18 @@ export async function getProducts() {
   });
 }
 
+//장바구니 추가 및 삭제
 export async function getCart(userId) {
-  return await get(ref(database, `cart/${userId}`)).then((snapshot) => {
+  return get(ref(database, `cart/${userId}`)).then((snapshot) => {
     const items = snapshot.val() || {};
     return Object.values(items);
   });
 }
 
 export async function addAndUpdateCart(userId, product) {
-  return await set(ref(database, `cart/${userId}/${product.id}`, product));
+  return set(ref(database, `cart/${userId}/${product.id}`), product);
 }
 
 export async function deleteCart(userId, productId) {
-  return await remove(ref(database, `cart/${userId}/${productId}`));
+  return remove(ref(database, `cart/${userId}/${productId}`));
 }

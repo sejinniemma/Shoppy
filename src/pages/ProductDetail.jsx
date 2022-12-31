@@ -13,10 +13,12 @@ export default function ProductDetail() {
   } = useLocation();
 
   const [selected, setSelected] = useState(options && options[0]);
-  const handleSelect = (e) => setSelected(e.target.value);
+  const handleSelect = (e) => {
+    setSelected(e.target.value);
+  };
+
   const handleClick = () => {
-    // 저장할때 state와 DB둘다 할필요 없음, 가져올때 하는게 맞음
-    const product = { id, image, title, price, optioin: selected, quantity: 1 };
+    const product = { id, image, title, price, option: selected, quantity: 1 };
     addAndUpdateCart(uid, product);
   };
 
