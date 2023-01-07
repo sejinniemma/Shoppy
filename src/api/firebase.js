@@ -32,7 +32,7 @@ export function logout() {
 
 export function onUserStateChange(callback) {
   onAuthStateChanged(auth, async (user) => {
-    const updatedUser = user && (await adminUser(user));
+    const updatedUser = user ? await adminUser(user) : user;
     return callback(updatedUser);
   });
 }
@@ -45,6 +45,7 @@ async function adminUser(user) {
       const isAdmin = admins.includes(user.uid) ? true : false;
       return { ...user, isAdmin };
     }
+    return user;
   });
 }
 // 데이터 쓰기
